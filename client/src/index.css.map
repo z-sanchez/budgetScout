@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,SAAS,CAAT,IAAS,GACT,SAAS,CAAT,UAAS,GACT,SAAS,CAAT,SAAS",
-    "sources": [
-        "index.sass"
-    ],
-    "names": [],
-    "file": "index.css"
-}
