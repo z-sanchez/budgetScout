@@ -1,11 +1,12 @@
 import React from "react";
-import { LIGHT_GRAY, LIGHT_TEXT } from "../constants";
+import { LIGHT_GRAY, LIGHT_TEXT } from "../../constants";
 
 interface TextInputProps {
   type?: string;
   label?: string;
   placeHolder?: string;
   width?: string;
+  className?: string;
 }
 
 const TextInput: React.FC<TextInputProps> = ({
@@ -13,6 +14,7 @@ const TextInput: React.FC<TextInputProps> = ({
   label = "Label",
   placeHolder = "Placeholder",
   width = "100%",
+  className = "",
 }) => {
   return (
     <>
@@ -24,7 +26,9 @@ const TextInput: React.FC<TextInputProps> = ({
       </label>
       <input
         style={{ backgroundColor: LIGHT_GRAY }}
-        className="appFont font-semibold rounded-md py-3 pl-5 text-lg text-left focus-visible:outline-none"
+        className={`appFont font-semibold rounded-md py-3 pl-5 text-lg text-left focus-visible:outline-none ${
+          width + " " + className
+        }`}
         type={type}
         placeholder={placeHolder}
       ></input>

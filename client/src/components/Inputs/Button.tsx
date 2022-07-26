@@ -6,6 +6,7 @@ interface ButtonProps {
   textColor?: string;
   onSubmit?: any;
   width?: string;
+  className?: string;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -14,10 +15,11 @@ const Button: React.FC<ButtonProps> = ({
   textColor = "#fff",
   width = "100%",
   onSubmit = () => console.log("button pressed"),
+  className = "",
 }) => {
   return (
     <button
-      className="rounded-md py-3 px-32 font-semibold text-xl text-center cursor-pointer appFont"
+      className={`rounded-md py-3 px-32 font-semibold text-xl text-center cursor-pointer appFont ${className}`}
       style={{
         backgroundColor: backgroundColor,
         color: textColor,

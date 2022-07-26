@@ -3,19 +3,11 @@ import React from "react";
 interface ContainerProps {
   flexFlow?: string;
   children?: JSX.Element | JSX.Element[];
+  className?: string;
 }
 
-const Container: React.FC<ContainerProps> = ({ children, flexFlow = "" }) => {
-  return (
-    <div className="flex justify-center h-full">
-      <div
-        className="w-3/4 py-8"
-        style={flexFlow ? { display: "flex", flexFlow: flexFlow } : {}}
-      >
-        {children}
-      </div>
-    </div>
-  );
+const Container: React.FC<ContainerProps> = ({ children, className = "" }) => {
+  return <div className={`w-3/4 ${className}`}>{children}</div>;
 };
 
 export { Container };
