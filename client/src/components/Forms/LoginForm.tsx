@@ -1,8 +1,6 @@
 import React from "react";
-import { Button } from "../Inputs/Button";
-import { GREEN } from "../../constants";
+import { GREEN } from "../../utils/constants";
 import { FormButton, FormInput } from "./styledComponents";
-import { TextInput } from "../Inputs";
 
 interface FormProps {}
 

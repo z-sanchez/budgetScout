@@ -12,6 +12,7 @@ const LoginPage: React.FC = () => {
         <img
           src={loginSplash}
           className="w-11/12 lg:w-8/12 self-center mb-14 lg:mb-auto lg:mt-auto"
+          style={{ minWidth: "400px" }}
           alt="loginSplash"
         ></img>
       </Container>

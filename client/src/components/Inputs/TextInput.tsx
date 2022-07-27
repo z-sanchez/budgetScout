@@ -1,5 +1,5 @@
 import React from "react";
-import { LIGHT_GRAY, LIGHT_TEXT } from "../../constants";
+import { LIGHT_GRAY, LIGHT_TEXT } from "../../utils/constants";
 
 interface TextInputProps {
   type?: string;

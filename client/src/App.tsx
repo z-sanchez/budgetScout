@@ -1,10 +1,10 @@
 import React from "react";
-import { LoginPage } from "./pages";
+import { AppRoutes } from "./Routes";
 
 const App: React.FC = () => {
   return (
     <div className="h-full flex justify-center py-8">
-      <LoginPage></LoginPage>
+      <AppRoutes></AppRoutes>
     </div>
   );
 };
