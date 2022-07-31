@@ -1,9 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 @tailwind base {}@tailwind components {}@tailwind utilities {}html, body, #root {
   height: 100%;
 }
 
 .appFont {
   font-family: 'Raleway';
+}
+
+.numeralFont {
+  font-family: 'Poppins';
 }
 /*# sourceMappingURL=index.css.map */

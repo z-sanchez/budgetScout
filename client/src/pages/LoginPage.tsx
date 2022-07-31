@@ -6,8 +6,8 @@ import { Container } from "../layout";
 
 const LoginPage: React.FC = () => {
   return (
-    <Container className="w-100 flex flex-col lg:flex-row lg:justify-center">
-      <Container className="lg:w-1/2 w-full flex flex-col lg:mr-10">
+    <div className="w-3/4 flex flex-col lg:flex-row lg:justify-center">
+      <div className=" w-full flex flex-col lg:mr-10">
         <img src={logo} className="w-40 mb-14 lg:hidden" alt="logo"></img>
         <img
           src={loginSplash}
@@ -15,8 +15,8 @@ const LoginPage: React.FC = () => {
           style={{ minWidth: "400px" }}
           alt="loginSplash"
         ></img>
-      </Container>
-      <Container className="w-full lg:ml-10 lg:w-1/2 flex flex-col justify-center items-center">
+      </div>
+      <div className="w-full lg:ml-10 flex flex-col justify-center items-center">
         <img
           src={logo}
           className="w-2/4 mb-14 hidden lg:block self-center "
@@ -24,8 +24,8 @@ const LoginPage: React.FC = () => {
         ></img>
         <LoginForm></LoginForm>
         <h1>Testing Deploy</h1>
-      </Container>
-    </Container>
+      </div>
+    </div>
   );
 };
 
