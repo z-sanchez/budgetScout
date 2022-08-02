@@ -2,9 +2,11 @@ import React from "react";
 import { GREEN } from "../../utils/constants";
 import { FormButton, FormInput } from "./styledComponents";
 
-interface FormProps {}
+interface FormProps {
+  className?: string;
+}
 
-const LoginForm: React.FC<FormProps> = ({}) => {
+const LoginForm: React.FC<FormProps> = ({ className }) => {
   return (
     <form className="flex flex-col w-full">
       <FormInput

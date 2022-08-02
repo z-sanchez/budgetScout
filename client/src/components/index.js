@@ -4,3 +4,6 @@ export * from "./ProfileIcon";
 export * from "./Header";
 export * from "./BudgetBlock";
 export * from "./ProgressBar";
+export * from "./PageTitle";
+export * from "./DateIndicator";
+export * from "./SearchBar";

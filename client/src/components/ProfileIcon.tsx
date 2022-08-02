@@ -11,6 +11,7 @@ const Icon = styled.div`
 `;
 
 interface ProfileIconProps {
+  className?: string;
   backgroundColor: string;
   letter: string;
   onClick?: any;
@@ -20,10 +21,11 @@ const ProfileIcon: React.FC<ProfileIconProps> = ({
   backgroundColor,
   onClick = () => console.log("profile icon pressed"),
   letter,
+  className,
 }) => {
   return (
     <Icon
-      className="font-semibold text-2xl"
+      className={`font-semibold text-2xl ${className}`}
       style={{ backgroundColor: backgroundColor }}
       onClick={onClick}
     >

@@ -4,11 +4,16 @@ import { LinearProgress } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 interface ProgressBarProps {
-  precentage: number,
-  color: string,
+  className?: string;
+  precentage: number;
+  color: string;
 }
 
-const ProgressBar: React.FC<ProgressBarProps> = ({ precentage, color }) => {
+const ProgressBar: React.FC<ProgressBarProps> = ({
+  className,
+  precentage,
+  color,
+}) => {
   const theme = createTheme({
     components: {
       MuiLinearProgress: {
@@ -30,7 +35,7 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ precentage, color }) => {
 
   return (
     <ThemeProvider theme={theme}>
-      <div className="flex w-full justify-between items-center">
+      <div className={`flex w-full justify-between items-center ${className}`}>
         <LinearProgress
           className="w-8/12"
           color="primary"

@@ -19,7 +19,7 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   return (
     <button
-      className={`rounded-md py-3 px-32 font-semibold text-xl text-center cursor-pointer appFont ${className}`}
+      className={`rounded-md py-3 px-26 font-semibold text-xl text-center cursor-pointer appFont ${className}`}
       style={{
         backgroundColor: backgroundColor,
         color: textColor,

@@ -1,7 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-@tailwind base {}@tailwind components {}@tailwind utilities {}html, body, #root {
+@tailwind base {}@tailwind components {}@tailwind utilities {}html {
+  height: 100vh;
+}
+
+body, #root {
   height: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+input::-webkit-input-placeholder {
+  color: rgba(132, 132, 132, 0.51);
 }
 
 .appFont {
@@ -10,5 +22,9 @@
 
 .numeralFont {
   font-family: 'Poppins';
+}
+
+.scrollableList::-webkit-scrollbar {
+  display: none;
 }
 /*# sourceMappingURL=index.css.map */

@@ -6,7 +6,7 @@ import { Container } from "../layout";
 
 const LoginPage: React.FC = () => {
   return (
-    <div className="w-3/4 flex flex-col lg:flex-row lg:justify-center">
+    <div className="w-10/12  flex flex-col lg:flex-row lg:justify-center">
       <div className=" w-full flex flex-col lg:mr-10">
         <img src={logo} className="w-40 mb-14 lg:hidden" alt="logo"></img>
         <img
