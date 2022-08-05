@@ -20,7 +20,7 @@ const PageTitle: React.FC<PageTitleProps> = ({
         {title}
       </h1>
       <div
-        className="h-2 rounded-md w-11/12"
+        className="h-2 rounded-md"
         style={{ backgroundColor: underLineColor }}
       ></div>
     </div>

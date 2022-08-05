@@ -5,7 +5,6 @@ interface ButtonProps {
   backgroundColor?: string;
   textColor?: string;
   onSubmit?: any;
-  width?: string;
   className?: string;
 }
 
@@ -13,7 +12,6 @@ const Button: React.FC<ButtonProps> = ({
   text = "button",
   backgroundColor = "#000",
   textColor = "#fff",
-  width = "100%",
   onSubmit = () => console.log("button pressed"),
   className = "",
 }) => {
@@ -23,7 +21,6 @@ const Button: React.FC<ButtonProps> = ({
       style={{
         backgroundColor: backgroundColor,
         color: textColor,
-        width: width,
       }}
       onClick={onSubmit}
     >

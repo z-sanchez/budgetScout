@@ -11,8 +11,8 @@ const LoginPage: React.FC = () => {
         <img src={logo} className="w-40 mb-14 lg:hidden" alt="logo"></img>
         <img
           src={loginSplash}
-          className="w-11/12 lg:w-8/12 self-center mb-14 lg:mb-auto lg:mt-auto"
-          style={{ minWidth: "400px" }}
+          className="w-full lg:w-8/12 self-center mb-14 lg:mb-auto lg:mt-auto"
+          style={{ maxWidth: "400px" }}
           alt="loginSplash"
         ></img>
       </div>

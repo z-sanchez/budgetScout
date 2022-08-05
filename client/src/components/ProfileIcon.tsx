@@ -25,7 +25,7 @@ const ProfileIcon: React.FC<ProfileIconProps> = ({
 }) => {
   return (
     <Icon
-      className={`font-semibold text-2xl ${className}`}
+      className={`font-semibold text-2xl cursor-pointer ${className}`}
       style={{ backgroundColor: backgroundColor }}
       onClick={onClick}
     >

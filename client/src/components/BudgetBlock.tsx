@@ -25,7 +25,7 @@ const BudgetBlock: React.FC<BudgetBlockProps> = ({
     <div
       onClick={() => onClick()}
       style={{ backgroundColor: backgroundColor }}
-      className={`flex flex-col px-10 py-8 w-full rounded-md ${className}`}
+      className={`flex flex-col px-10 py-8 w-full rounded-md cursor-pointer ${className}`}
     >
       <div className="flex flex-row justify-between w-full">
         <h1 className="text-white font-semibold text-3xl appFont">

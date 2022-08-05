@@ -33,8 +33,8 @@ const SearchBar: React.FC<SearchBarProps> = ({
         ></input>
       </form>
       <div
-        className="overflow-scroll overflow-x-hidden scrollableList mb-10 "
-        style={{ maxHeight: "36%" }}
+        className="overflow-scroll overflow-x-hidden scrollableList mb-10 lg:flex lg:justify-center lg:flex-row lg:flex-wrap"
+        style={{ maxHeight: "50vh" }}
       >
         {Array.isArray(children)
           ? children.map((child: JSX.Element) => {
