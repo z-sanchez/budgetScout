@@ -3,7 +3,7 @@ import { AppRoutes } from "./Routes";
 
 const App: React.FC = () => {
   return (
-    <div className="flex h-full justify-center py-8">
+    <div className="flex h-screen justify-center py-8">
       <AppRoutes></AppRoutes>
     </div>
   );

@@ -104,7 +104,7 @@ const BudgetsPage: React.FC = () => {
           ></BudgetBlock>
         </SearchBar>
         <Button
-          className="self-center w-full lg:w-1/4 mt-auto mb-10"
+          className=" self-center w-full lg:w-1/4 mt-5"
           text="Add Payment"
           backgroundColor={GREEN}
         ></Button>
